@@ -1,4 +1,6 @@
-# pip3 install python-chess
+# Author: Xiaoxuan
+# Date: 10/31/2022
+# Purpose: test various chess-playing programs
 import chess
 from RandomAI import RandomAI
 from HumanPlayer import HumanPlayer
@@ -6,7 +8,6 @@ from MinimaxAI import MinimaxAI
 from AlphaBetaAI import AlphaBetaAI
 from ChessGame import ChessGame
 import random
-import sys
 
 random.seed(1)
 player1 = MinimaxAI(4)
