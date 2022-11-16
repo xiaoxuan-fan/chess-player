@@ -20,7 +20,7 @@ class IterativeDeepeningAI:
             move = search_method.choose_move(chess_board)
             current_time = time.time()
             spent_time = current_time - start_time
-            if (self.time_limit - spent_time) < spent_time:
+            if (self.time_limit - spent_time) < spent_time * 100:
                 print(curr_depth)
                 break
 
@@ -31,5 +31,5 @@ class IterativeDeepeningAI:
 if __name__ == '__main__':
     board = chess.Board()
     print(board)
-    ai = IterativeDeepeningAI(AlphaBetaAI, 30)
+    ai = IterativeDeepeningAI(AlphaBetaAI, 3)
     ai.choose_move(board)
